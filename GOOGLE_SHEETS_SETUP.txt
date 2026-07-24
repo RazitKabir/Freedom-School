@@ -1,0 +1,20 @@
+Google Sheets setup for the Join our Mailing List form
+
+1. Create a new Google Sheet.
+2. Name the first sheet: Mailing List
+3. Add this header row:
+   Timestamp | First Name | Last Name | Zip Code | Mobile Number | Personal Email | Local Office Updates
+4. In Google Sheets, go to Extensions > Apps Script.
+5. Delete any starter code and paste the code from google-apps-script.js.
+6. Click Deploy > New deployment.
+7. Select type: Web app.
+8. Execute as: Me.
+9. Who has access: Anyone.
+10. Click Deploy and authorize it.
+11. Copy the Web App URL.
+12. Open main.js and replace:
+    https://script.google.com/macros/s/AKfycbziHv89KRMqNd6sibd8pn68q4IJynbZqUyrcc3Y9JHZdt5QUIeyYyHyp3ecnXrRnyI7XQ/exec
+    with your copied Web App URL.
+13. Save the file and upload the website again.
+
+After this, every form submission will create a new row in the Google Sheet.
